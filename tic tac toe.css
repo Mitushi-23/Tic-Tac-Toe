@@ -5,7 +5,7 @@
 
 body{
     text-align: center;
-    background-color: rgba(240, 236, 223, 0.513);
+    background-color: rgba(23, 223, 140, 0.513);
 }
 p{
     margin-top: 30px;
@@ -47,9 +47,13 @@ h1{
 #btn{
     padding: 6px 20px;
     font-size: 15px;
-   color:white;
-   background-color: black;
+   color:black;
+   /* background-color: black; */
+   border: 2px solid blue;
    border-radius: 6px;
+}
+#btn:hover{
+    background-color: rgb(187, 187, 236);
 }
 
 .box{
