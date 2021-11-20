@@ -1,15 +1,17 @@
 *{
     margin: 0%;
     padding: 0%;
+    /* box-sizing: border-box; */
 }
 
 body{
     text-align: center;
     background-color: rgba(23, 223, 140, 0.513);
+    /* min-height: 100vh; */
 }
 p{
     margin-top: 30px;
-    color: rgb(138, 111, 214);
+    color: rgb(150, 120, 233);
     font-size: 20px;
     font-family: cursive ;
 }
@@ -48,12 +50,13 @@ h1{
     padding: 6px 20px;
     font-size: 15px;
    color:black;
-   /* background-color: black; */
-   border: 2px solid blue;
-   border-radius: 6px;
+   background-color: none;
+   background: none;
+   border: 1px solid rgb(122, 119, 119);
 }
 #btn:hover{
-    background-color: rgb(187, 187, 236);
+    /* background-color: rgb(187, 187, 236); */
+    border: 2px solid rgb(122, 119, 119);
 }
 
 .box{
@@ -90,16 +93,20 @@ h1{
 @media only screen and (max-width: 380px){
 .entry{
     width: 20px;
+    border: 1px solid black;
+
 }
-.game{
+/* .game{
     display: flex;
     flex-direction: column;
-    /* margin: auto; */
     margin-inline: auto;
     width: fit-content;
-}
+} */
+/* margin: auto; */
 .box{
     width: fit-content;
     margin: 15px;
+    height: auto;
+    grid-template-columns: auto auto auto;
 }
 }
