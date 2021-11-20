@@ -39,6 +39,8 @@ h1{
     border: 3px solid black;
     /* padding: 6px 12px; */
     font-size: 20px;
+    width: 80px;
+    height: 80px;
 }
 
 /* .fill{
@@ -63,12 +65,13 @@ h1{
     text-align: center;
     /* margin: 50px; */
     /* margin-left: 20%; */
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    height: 200px;
-   
+    grid-template-columns: auto auto auto;
+    /* height: 300px; */
+    /* width: 300px; */
+     
 }
 
 #print{
@@ -77,23 +80,25 @@ h1{
     font-size: 30px;
     margin-bottom: 50px;
 }
-#b1,#b4,#b7{
+#b0,#b3,#b6{
     border-left: none;
 }
-#b1,#b2,#b3{
+#b0,#b1,#b2{
     border-top: none;
 }
-#b3,#b6,#b9{
+#b2,#b5,#b8{
     border-right: none;
 }
-#b7,#b8,#b9{
+#b6,#b7,#b8{
     border-bottom: none;
-}
+} 
+
 
 @media only screen and (max-width: 380px){
 .entry{
-    width: 20px;
-    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid black; */
 
 }
 /* .game{

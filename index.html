@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Tic Tac Toe Game</title>
-<link rel="stylesheet" href="tic tac toe.css">
-<link rel="icon" href="https://tse4.mm.bing.net/th?id=OIP.gArZ5rau_o-XNf9jtZT3pgHaHa&pid=Api&P=0&w=300&h=300">
-</head>
-<body>
+    <link rel="stylesheet" href="tic tac toe.css" />
+    <link
+      rel="icon"
+      href="https://tse4.mm.bing.net/th?id=OIP.gArZ5rau_o-XNf9jtZT3pgHaHa&pid=Api&P=0&w=300&h=300"
+    />
+  </head>
+  <body>
     <div class="game">
-    <h1>TIC TAC TOE</h1>
-    <p>Game Starts by just tap on box<br>First player starts as <b>Player X </b> <br>And <br> Second player as <b>Player O</b></p>
+      <h1>TIC TAC TOE</h1>
+      <p>
+        Game Starts by just tap on box<br />
+        <b>Computer is X </b> <br />And <br />
+        <b>Player is O</b>
+      </p>
 
-        <div class="box">
-            
-    <!-- <div class="fill"> -->
-        <!-- <div class="line1"> -->
-            <!-- <div class="line"></div> -->
-    <input type="text" class="entry col" id="b1" onclick="myfunc_3(); myfunc();" readonly>
-    <input type="text" class="entry col" id="b2" onclick="myfunc_4(); myfunc();" readonly>
-    <input type="text" class="entry col" id="b3" onclick="myfunc_5(); myfunc();" readonly>
-<!-- </div> -->
-<!-- </div> -->
-<!-- <div class="fill line"> -->
-    <!-- <div class="line1"> -->
-    <input type="text" class="entry col" id="b4" onclick="myfunc_6(); myfunc();" readonly>
-    <input type="text" class="entry col" id="b5" onclick="myfunc_7(); myfunc();" readonly>
-    <input type="text" class="entry col" id="b6" onclick="myfunc_8(); myfunc();" readonly>
-<!-- </div> -->
-<!-- </div> -->
-<!-- <div class="fill line"> -->
-    <!-- <div class="line1"> -->
-    <input type="text" class="entry col" id="b7" onclick="myfunc_9(); myfunc();" readonly>
-    <input type="text" class="entry col" id="b8" onclick="myfunc_10(); myfunc();" readonly>
-    <input type="text" class="entry col" id="b9" onclick="myfunc_11(); myfunc();" readonly>
-<!-- </div> -->
-<!-- </div> -->
-</input>
-</div>
+      <div class="box">
+        <div class="entry" id="b0"></div>
+        <div class="entry" id="b1"></div>
+        <div class="entry" id="b2"></div>
+        <div class="entry" id="b3"></div>
+        <div class="entry" id="b4"></div>
+        <div class="entry" id="b5"></div>
+        <div class="entry" id="b6"></div>
+        <div class="entry" id="b7"></div>
+        <div class="entry" id="b8"></div>
+      </div>
+    </div>
+    <br />
+    <h2 id="winner"></h2>
     <br>
     <button id="btn" onclick="myfunc_2()">Reset</button>
-    <p id="print"></p>
+    <!-- <p id="print"></p> -->
 
-<script src="tic tac toe.js"></script>
-
-</body>
+    <script src="try.js"></script>
+  </body>
 </html>
