@@ -1,5 +1,12 @@
 const player = "O";
 const computer = "X";
+let clickSound = new Audio();
+clickSound.src = "sound/penclick.mp3";	
+
+
+
+let sound = new Audio();
+sound.src= "sound/music.mp3";
 
 let board_full = false;
 let play_board = ["", "", "", "", "", "", "", "", ""];
@@ -52,6 +59,7 @@ const check_for_winner = () => {
     winner.innerText = "Winner is player!!";
     winner.classList.add("playerWin");
     window.alert('Player Win');
+    sound.play();
     board_full = true
   } else if (res == computer) {
     winner.innerText = "Winner is computer";
@@ -73,6 +81,7 @@ const render_board = () => {
     // board_container.innerHTML += `<div class="entry" id="b${i}" onclick="addPlayerMove(${i})>${play_board[i]}</div>`
     if (e == player || e == computer) {
       document.querySelector(`#b${i}`).classList.add("occupied");
+      clickSound.play();
     }
   });
 };
@@ -103,6 +112,7 @@ const addComputerMove = () => {
 
 const reset_board = () => {
   play_board = ["", "", "", "", "", "", "", "", ""];
+  clickSound.play();
   board_full = false;
   winner.classList.remove("playerWin");
   winner.classList.remove("computerWin");
@@ -114,6 +124,7 @@ const reset_board = () => {
 //initial render
 render_board();
 function myfunc_2(){
+  clickSound.play();
     location.reload();
     b1= document.getElementById("b1").value='';
     b2= document.getElementById("b2").value='';
